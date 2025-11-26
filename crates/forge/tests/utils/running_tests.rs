@@ -77,6 +77,7 @@ pub fn run_test_case(
                     contracts_data: ContractsData::try_from(test.contracts(&ui).unwrap()).unwrap(),
                     tracked_resource,
                     environment_variables: test.env().clone(),
+                    launch_debugger: false,
                 }),
                 output_config: Arc::new(OutputConfig {
                     detailed_resources: false,

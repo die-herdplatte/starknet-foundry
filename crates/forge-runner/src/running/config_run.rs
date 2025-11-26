@@ -100,6 +100,7 @@ pub fn run_config_pass(
         &program,
         &mut cached_state,
         &mut context,
+        None,
     )?;
 
     let mut config = RawForgeConfig::default();
